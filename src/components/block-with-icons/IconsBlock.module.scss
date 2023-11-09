@@ -6,4 +6,13 @@
     row-gap: 50px;
 
     margin: 50px 0;
+
+    & svg {
+        will-change: filter;
+        transition: filter 300ms;
+
+        &:hover {
+            filter: drop-shadow(0 0 2em #646cffaa);
+        }
+    }
 }
