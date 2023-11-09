@@ -6,6 +6,8 @@ import Navigation from '../navigation/Navigation';
 import Button from '../button/Button';
 
 const Header = () => {
+
+
 	return (
 		<>
 			<header className={style.container}>

@@ -1,0 +1,45 @@
+.layout {
+    background-color: #fff;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin: 0 auto;
+    padding: 100px 16px;
+    max-width: 85%;
+}
+
+.item1 {
+    grid-area: 1 / 1 / 2 / 4;
+
+    & p {
+        width: max(70%, 700px);
+        padding: 20px 100px 0 16px;
+        line-height: 1.4;
+        font-size: 18px;
+        color: #425466;
+    }
+}
+
+.item2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.item3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.item4 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+h2 {
+    width: max(65%, 700px);
+    padding: 0 100px 0 16px;
+    font-size: 38px;
+    color: #0a2540;
+}
