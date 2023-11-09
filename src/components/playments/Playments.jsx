@@ -1,5 +1,5 @@
 import style from './Playments.module.scss'
-import { BiLabel } from 'react-icons/bi'
+import { BiLabel, BiRightArrowAlt } from 'react-icons/bi'
 import { BsFillFileCodeFill } from "react-icons/bs";
 
 import Button from '../button/Button'
@@ -17,9 +17,11 @@ const Playments = () => {
 						<p>
 							Entdecken Sie Stripe Payments oder erstellen Sie direkt ein Konto und beginnen Sie mit dem Akzeptieren von Zahlungen. Unser Sales-Team berät Sie gerne und gestaltet für Sie ein individuelles Angebot, das genau auf Ihr Unternehmen abgestimmt ist.
 						</p>
-						<div>
+						<div className={style.containerBtn}>
 							<Button text="btn text" />
-							<a href="#">link</a>
+							<a className={style.link} href="#">link
+								<BiRightArrowAlt />
+							</a>
 						</div>
 					</div>
 					<div className={style.item}>
