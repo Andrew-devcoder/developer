@@ -11,7 +11,6 @@ const Home = () => {
 			<Intro />
 			<IconsBlock />
 
-			<h1 className={style.container}>hi mom</h1>
 			<h2 id="blog" className={style.container}>Blog matherfucker</h2>
 		</>
 	)
