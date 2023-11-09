@@ -15,9 +15,16 @@
         text-align: start;
         padding: 5px;
         cursor: pointer;
+        text-transform: capitalize;
 
         & a {
+            display: flex;
+            align-items: center;
             color: white;
         }
     }
+}
+
+.icon {
+    margin: 0 5px;
 }

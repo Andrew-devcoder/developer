@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom'
 import style from './Header.module.scss'
 
 import Navigation from '../navigation/Navigation';
+import Button from '../button/Button';
 
 const Header = () => {
 	return (
@@ -16,9 +17,10 @@ const Header = () => {
 				<nav>
 					<ul>
 						<li><Link>Other navigation</Link></li>
-						<li><button>Button</button></li>
 					</ul>
 				</nav>
+
+				<Button text="button" />
 
 			</header >
 		</>

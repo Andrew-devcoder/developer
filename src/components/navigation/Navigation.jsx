@@ -11,7 +11,7 @@ const Navigation = () => {
 						<Link to='/'>Home</Link>
 					</li>
 					<li>
-						<Scrolling to='blog' spy={true} smooth={true} offset={-10} duration={500}>Blog</Scrolling>
+						<Scrolling to='skills' spy={true} smooth={true} offset={-100} duration={500}>skills</Scrolling>
 					</li>
 					<li>
 						<Link to='/about'>About</Link>
