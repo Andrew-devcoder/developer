@@ -1,0 +1,56 @@
+.layout {
+    background-color: #0a2540;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 85%;
+    margin: 50px auto;
+    padding: 0 16px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h3 {
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    & h4 {
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    & p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    & h4,
+    p {
+        padding: 0 32px 0 16px;
+    }
+}
+
+.itemBig {
+    & p,
+    h3 {
+        padding: 0 100px 0 16px;
+    }
+}
+
+.icon {
+    margin: 0 0 0 16px;
+}
+
+button {
+    margin: 0 0 0 16px;
+}
