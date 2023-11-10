@@ -1,6 +1,14 @@
+.section {
+    background-color: #fff;
+}
+
 .layout {
+    padding: 150px 0;
+    position: relative;
+
+    transform: skewY(-3deg);
+    height: auto;
     background-color: #0a2540;
-    padding: 50px 0;
 }
 
 .container {
@@ -10,6 +18,8 @@
 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+
+    transform: skewY(3deg);
 }
 
 .item {

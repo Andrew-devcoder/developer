@@ -1,7 +1,14 @@
-.container {
-    padding: 100px 15px 50px;
+.wrapper {
+    transform: skewY(-3deg);
+    transform-origin: top left;
+    // background-color: #313131;
+    background-color: #242424;
+}
 
-    background-color: #313131;
+.container {
+    padding: 100px 15px 0px;
+
+    transform: skewY(3deg);
 
     & p {
         padding: 50px 0 0 0;
