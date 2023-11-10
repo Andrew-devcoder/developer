@@ -3,16 +3,16 @@ import style from './Card.module.scss';
 const Card = () => {
 	const arrayData = [
 		{
-			imageUrl: 'https://images.ctfassets.net/fzn2n1nzq965/wEsTNDVgdEqaPAKkFdqnL/c69e1649432f1b772d86d81e423b7e3e/buttons.svg?q=80',
+			imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGha6Z1pM7IAa16uznDgQAtNkMZzr4zuRgxHYMHPbuk7Aotlu_TSp3_cwY_8FR_vr204A&usqp=CAU',
 			text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi non laudantium tempora distinctio assumenda aut eaque, molestiae expedita totam, nemo blanditiis ex velit itaque incidunt maxime ipsa ipsum veritatis iure?',
 		},
 		{
-			imageUrl: 'https://images.ctfassets.net/fzn2n1nzq965/5C5LvT3YZvRTGYn7uabXGj/7da8063dc77c67b7f66a1479f47409c8/build_with_stripe.svg?q=80',
-			text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi non laudantium tempora distinctio assumenda aut eaque, molestiae expedita totam, nemo blanditiis ex velit itaque incidunt maxime ipsa ipsum veritatis iure?',
+			imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXd2ycuPpBbXBt0tOufaAnDHYPd-0WsLydiR-CLImEzDG_JPFbLGuIkKxpCIj1qDFqJI&usqp=CAU',
+			text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi non laudantium tempora distinctio assumenda aut eaque, molestiae expedita totam, nemo blanditiis ex velit itaque incidunt maxime ipsa ipsum veritatis iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi non laudantium tempora distinctio assumenda aut eaque, molestiae expedita totam, nemo blanditiis ex velit itaque incidunt maxime ipsa ipsum veritatis iure?',
 		},
 		{
-			imageUrl: 'https://images.ctfassets.net/fzn2n1nzq965/5k7VeoAQQDK7032fIF6PEU/25f3670f5f4508103ee77afd92b7e074/typeform-logo.svg',
-			text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi non laudantium tempora distinctio assumenda aut eaque, molestiae expedita totam, nemo blanditiis ex velit itaque incidunt maxime ipsa ipsum veritatis iure?',
+			imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimPqIWEagSEg-OSt-IrnWdcSUkl23d19cGxTKD0ruw_yqop5D3aihbycpNStFRMhH7r8&usqp=CAU',
+			text: 'Excepturi non laudantium tempora distinctio assumenda aut eaque, molestiae expedita totam, nemo blanditiis ex velit itaque incidunt maxime ipsa ipsum veritatis iure?',
 		},
 	];
 

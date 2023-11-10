@@ -21,7 +21,9 @@ const Cards = () => {
 							Millionen von Unternehmen aller Größenordnungen nutzen Stripe, um Zahlungen online und persönlich zu akzeptieren, Auszahlungen vorzunehmen, Finanzprozesse zu automatisieren und letztendlich ihren Umsatz zu steigern.
 						</p>
 					</div>
+
 					<Card />
+
 				</div>
 			</div>
 		</>

@@ -1,0 +1,34 @@
+.card {
+    border-radius: 8px;
+
+    background-color: #80e9ff;
+    margin: 0 16px;
+    padding-bottom: 20px;
+
+    transition: all 0.4s ease;
+
+    & img {
+        background-size: cover;
+        background-position: center;
+        padding: 5px;
+        border-radius: 8px;
+        max-height: 180px;
+        width: 100%;
+
+        transition: all 0.4s ease;
+        opacity: 0.8;
+    }
+
+    & p {
+        padding: 16px;
+        line-height: 1.2;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+
+        & img {
+            opacity: 1;
+        }
+    }
+}
