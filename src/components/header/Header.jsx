@@ -18,6 +18,7 @@ const Header = () => {
 
 				<nav>
 					<ul>
+						<li><Scrolling to="conctact" spy={true} smooth={true} offset={0} duration={800}>Contact us</Scrolling></li>
 						<li><Link>Other navigation</Link></li>
 					</ul>
 				</nav>
