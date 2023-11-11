@@ -31,15 +31,23 @@ const NavMobile = () => {
 					>
 						<nav>
 							<ul>
-								<li>
+								<motion.li
+									initial={{ opacity: 0, scale: 0 }}
+									animate={{ opacity: 1, scale: 1 }}
+									transition={{ type: "spring" }}
+								>
 									<Link to='/'>Home</Link>
-								</li>
+								</motion.li>
 								<li>
 									{/* <Scrolling to='skills' spy={true} smooth={true} offset={-100} duration={500}>skills</Scrolling> */}
 								</li>
-								<li>
+								<motion.li
+									initial={{ opacity: 0, scale: 0 }}
+									animate={{ opacity: 1, scale: 1 }}
+									transition={{ type: "spring" }}
+								>
 									<Link to='/about'>About</Link>
-								</li>
+								</motion.li>
 							</ul>
 						</nav>
 
