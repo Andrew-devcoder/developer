@@ -1,5 +1,5 @@
 import Button from '../button/Button'
-import Card from './Card/Card'
+import Card from './card/Card'
 import style from './Cards.module.scss'
 
 
