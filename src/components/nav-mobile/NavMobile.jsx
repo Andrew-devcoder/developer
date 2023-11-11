@@ -34,7 +34,11 @@ const NavMobile = () => {
 								<motion.li
 									initial={{ opacity: 0, scale: 0 }}
 									animate={{ opacity: 1, scale: 1 }}
-									transition={{ type: "spring" }}
+									transition={{
+										type: "spring",
+										stiffness: 260,
+										delay: 0.1
+									}}
 								>
 									<Link to='/'>Home</Link>
 								</motion.li>
@@ -44,7 +48,11 @@ const NavMobile = () => {
 								<motion.li
 									initial={{ opacity: 0, scale: 0 }}
 									animate={{ opacity: 1, scale: 1 }}
-									transition={{ type: "spring" }}
+									transition={{
+										type: "spring",
+										stiffness: 260,
+										delay: 0.2
+									}}
 								>
 									<Link to='/about'>About</Link>
 								</motion.li>
