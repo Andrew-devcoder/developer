@@ -9,8 +9,22 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     align-items: center;
+
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 16px;
+    }
+
+    @media screen and (max-width: 425px) {
+        max-width: 95%;
+    }
 }
 
 .itemSvg {
     margin-left: auto;
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
 }

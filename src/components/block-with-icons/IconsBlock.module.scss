@@ -9,6 +9,10 @@
     max-width: 100%;
     width: 100%;
 
+    @media screen and (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     & svg {
         will-change: filter;
         transition: filter 300ms;

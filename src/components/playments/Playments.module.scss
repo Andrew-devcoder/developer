@@ -9,6 +9,10 @@
     transform: skewY(-3deg);
     height: auto;
     background-color: #0a2540;
+
+    @media screen and (max-width: 425px) {
+        padding: 100px 0;
+    }
 }
 
 .container {
@@ -20,12 +24,28 @@
     grid-template-columns: 2fr 1fr 1fr;
 
     transform: skewY(3deg);
+
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    @media screen and (max-width: 425px) {
+        max-width: 95%;
+        gap: 60px;
+        margin: 20px auto;
+    }
 }
 
 .item {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (max-width: 992px) {
+        gap: 15px;
+    }
 
     & h3 {
         font-size: 24px;
@@ -48,6 +68,10 @@
     & h4,
     p {
         padding: 0 32px 0 16px;
+
+        @media screen and (max-width: 425px) {
+            padding: 0;
+        }
     }
 }
 
@@ -55,11 +79,19 @@
     & p,
     h3 {
         padding: 0 100px 0 16px;
+
+        @media screen and (max-width: 425px) {
+            padding: 0;
+        }
     }
 }
 
 .icon {
     margin: 0 0 0 16px;
+
+    @media screen and (max-width: 425px) {
+        margin: 0;
+    }
 }
 
 .containerBtn {
@@ -71,6 +103,10 @@
         background-color: #00d4ff !important;
         color: #0a2540;
         transition: all 0.4s ease !important;
+
+        @media screen and (max-width: 425px) {
+            margin: 0 20px 0 0;
+        }
 
         &:hover {
             background-color: transparent !important;

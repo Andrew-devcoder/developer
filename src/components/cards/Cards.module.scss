@@ -12,6 +12,16 @@
     margin: 0 auto;
     padding: 100px 16px 175px;
     max-width: 85%;
+
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 425px) {
+        max-width: 95%;
+        padding: 50px 16px 75px;
+    }
 }
 
 .item1 {
@@ -23,6 +33,11 @@
         line-height: 1.4;
         font-size: 18px;
         color: #425466;
+
+        @media screen and (max-width: 992px) {
+            padding: 10px 0 0 16px;
+            width: 100%;
+        }
     }
 }
 
@@ -43,4 +58,9 @@ h2 {
     padding: 0 100px 0 16px;
     font-size: 38px;
     color: #0a2540;
+
+    @media screen and (max-width: 992px) {
+        padding: 0 0 0 16px;
+        width: 100%;
+    }
 }
