@@ -13,6 +13,13 @@ const Footer = () => {
 
 						<ul><li><a href='#' id="conctact"><RiContactsLine className={style.icon} /> contact us</a></li></ul>
 
+						<ul>
+							<li><h4>Title</h4></li>
+							<li><a href="#">Github</a></li>
+							<li><a href="#">Upwork</a></li>
+							<li><a href="#">Fiverr</a></li>
+						</ul>
+
 						<Navigation />
 
 					</nav>

@@ -1,11 +1,12 @@
 import { Link as Scrolling } from 'react-scroll';
 import { Link, Outlet } from 'react-router-dom'
+import style from './Navigation.module.scss'
 
 
 const Navigation = () => {
 	return (
 		<>
-			<nav>
+			<nav className={style.visible}>
 				<ul>
 					<li>
 						<Link to='/'>Home</Link>

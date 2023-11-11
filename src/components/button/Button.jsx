@@ -1,9 +1,10 @@
 import style from './Button.module.scss'
 
-const Button = ({ text }) => {
+const Button = ({ text, myStyle }) => {
+	const customStyle = `${style.button} ${myStyle}`
 	return (
 		<>
-			<button className={style.button}>
+			<button className={customStyle} >
 				{text}
 			</button>
 		</>

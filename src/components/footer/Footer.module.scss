@@ -6,7 +6,7 @@
 }
 
 .container {
-    padding: 100px 15px 0px;
+    padding: 100px 0 0 0;
 
     transform: skewY(3deg);
 
@@ -17,11 +17,18 @@
 }
 
 .navigation {
-    max-width: 85%;
     margin: 0 auto;
+    max-width: 85%;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    & h4 {
+        font-size: 1.2rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
 
     & ul li {
         text-align: start;
