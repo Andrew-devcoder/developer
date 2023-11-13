@@ -1,7 +1,39 @@
 .visible {
     display: block;
+    width: 100%;
 
     @media screen and (max-width: 992px) {
         display: none;
+    }
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        & li {
+            text-transform: capitalize;
+
+            &:first-child {
+                padding-left: 15px;
+            }
+
+            &:last-child {
+                margin-left: auto;
+                padding-right: 15px;
+            }
+        }
+    }
+
+    & a {
+        padding: 10px 15px;
+        color: white;
+        font-size: 1.6rem;
+        transition: all 0.4s ease;
+
+        &:hover {
+            color: aqua;
+            cursor: pointer;
+        }
     }
 }

@@ -1,6 +1,6 @@
-import style from './Intro.module.scss'
-
 import TextButton from '../text-with-button/TextButton'
+
+import style from './Intro.module.scss'
 
 const Intro = () => {
 

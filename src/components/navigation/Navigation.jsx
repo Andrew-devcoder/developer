@@ -9,14 +9,12 @@ const Navigation = () => {
 			<nav className={style.visible}>
 				<ul>
 					<li>
-						<Link to='/'>Home</Link>
-					</li>
-					<li>
 						<Scrolling to='skills' spy={true} smooth={true} offset={-100} duration={500}>skills</Scrolling>
 					</li>
 					<li>
 						<Link to='/about'>About</Link>
 					</li>
+					<li><Scrolling to="conctact" spy={true} smooth={true} offset={0} duration={800}>Contact us</Scrolling></li>
 				</ul>
 			</nav>
 		</>
