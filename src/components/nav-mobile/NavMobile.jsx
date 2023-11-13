@@ -32,13 +32,13 @@ const NavMobile = () => {
 						<nav>
 							<ul>
 								<motion.li
-									initial={{ opacity: 0, scale: 0 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{
-										type: "spring",
-										stiffness: 260,
-										delay: 0.1
-									}}
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+								// transition={{
+								// 	type: "spring",
+								// 	stiffness: 260,
+								// 	delay: 0.1
+								// }}
 								>
 									<Link to='/'>Home</Link>
 								</motion.li>
@@ -46,13 +46,13 @@ const NavMobile = () => {
 									{/* <Scrolling to='skills' spy={true} smooth={true} offset={-100} duration={500}>skills</Scrolling> */}
 								</li>
 								<motion.li
-									initial={{ opacity: 0, scale: 0 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{
-										type: "spring",
-										stiffness: 260,
-										delay: 0.2
-									}}
+									initial={{ opacity: 0 }}
+									animate={{ opacity: 1 }}
+								// transition={{
+								// 	type: "spring",
+								// 	stiffness: 260,
+								// 	delay: 0.2
+								// }}
 								>
 									<Link to='/about'>About</Link>
 								</motion.li>

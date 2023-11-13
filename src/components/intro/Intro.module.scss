@@ -1,14 +1,13 @@
 .container {
     max-width: 85%;
     margin: 0 auto;
-    padding: 100px 16px;
+    padding: 016px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     align-items: center;
+    min-height: 100vh;
 
     @media screen and (max-width: 992px) {
         display: flex;
@@ -25,6 +24,7 @@
     margin-left: auto;
 
     @media screen and (max-width: 992px) {
-        display: none;
+        // display: none;
+        margin: 0 auto;
     }
 }
