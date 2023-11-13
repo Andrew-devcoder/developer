@@ -3,10 +3,10 @@ import { Link, Outlet } from 'react-router-dom'
 import style from './Navigation.module.scss'
 
 
-const Navigation = () => {
+const Navigation = ({ isOpen }) => {
 	return (
 		<>
-			<nav className={style.visible}>
+			<nav className={isOpen ? style.mobile : style.desktop} >
 				<ul>
 					<li>
 						<Scrolling to='skills' spy={true} smooth={true} offset={-100} duration={500}>skills</Scrolling>
@@ -14,11 +14,15 @@ const Navigation = () => {
 					<li>
 						<Link to='/about'>About</Link>
 					</li>
-					<li><Scrolling to="conctact" spy={true} smooth={true} offset={0} duration={800}>Contact us</Scrolling></li>
+					<li>
+						<Scrolling to="conctact" spy={true} smooth={true} offset={0} duration={800}>Contact us</Scrolling>
+					</li>
 				</ul>
 			</nav>
+
 		</>
 	)
 }
 
 export default Navigation
+

@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { Squash as Hamburger } from 'hamburger-react'
 import { motion, AnimatePresence } from "framer-motion"
-import style from './NavMobile.module.scss'
-
 import { Link } from 'react-router-dom'
+
+import Navigation from '../navigation/Navigation'
+
+import style from './NavMobile.module.scss'
 
 const NavMobile = () => {
 
@@ -29,35 +31,8 @@ const NavMobile = () => {
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.4 }}
 					>
-						<nav>
-							<ul>
-								<motion.li
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-								// transition={{
-								// 	type: "spring",
-								// 	stiffness: 260,
-								// 	delay: 0.1
-								// }}
-								>
-									<Link to='/'>Home</Link>
-								</motion.li>
-								<li>
-									{/* <Scrolling to='skills' spy={true} smooth={true} offset={-100} duration={500}>skills</Scrolling> */}
-								</li>
-								<motion.li
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-								// transition={{
-								// 	type: "spring",
-								// 	stiffness: 260,
-								// 	delay: 0.2
-								// }}
-								>
-									<Link to='/about'>About</Link>
-								</motion.li>
-							</ul>
-						</nav>
+
+						<Navigation isOpen={isOpen} />
 
 					</motion.div>}
 				</AnimatePresence>
