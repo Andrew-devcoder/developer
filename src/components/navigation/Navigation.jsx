@@ -19,7 +19,7 @@ const Navigation = ({ isOpen, onClose }) => {
 					</li>
 						: null}
 					<li>
-						<Scrolling
+						{isOpen ? <Scrolling
 							to='skills'
 							spy={true}
 							smooth={true}
@@ -31,9 +31,19 @@ const Navigation = ({ isOpen, onClose }) => {
 						>
 							skills
 						</Scrolling>
+							: <Scrolling
+								to='skills'
+								spy={true}
+								smooth={true}
+								offset={-100}
+								duration={500}
+							>
+								skills
+							</Scrolling>
+						}
 					</li>
 					<li>
-						<Link
+						{isOpen ? <Link
 							to='/about'
 							onClick={() => {
 								onClose();
@@ -41,9 +51,15 @@ const Navigation = ({ isOpen, onClose }) => {
 						>
 							About
 						</Link>
+							: <Link
+								to='/about'
+							>
+								About
+							</Link>
+						}
 					</li>
 					<li>
-						<Scrolling
+						{isOpen ? <Scrolling
 							to="contact"
 							spy={true}
 							smooth={true}
@@ -54,9 +70,18 @@ const Navigation = ({ isOpen, onClose }) => {
 						>
 							Contact us
 						</Scrolling>
+							: <Scrolling
+								to="contact"
+								spy={true}
+								smooth={true}
+								offset={0} duration={800}
+							>
+								Contact us
+							</Scrolling>
+						}
 					</li>
 				</ul>
-			</nav>
+			</nav >
 
 		</>
 	)
