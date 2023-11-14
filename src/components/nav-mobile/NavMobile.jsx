@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Link } from 'react-router-dom'
 
 import Navigation from '../navigation/Navigation'
-
 import style from './NavMobile.module.scss'
 
 const NavMobile = () => {

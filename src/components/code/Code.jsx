@@ -5,20 +5,17 @@ import style from './Code.module.scss'
 const Code = () => {
 
 	const content = `
-	
-	.header {
-		display: flex;
+	.container {
+		max-width: 85%;
+		margin: 0 auto;
 
-	}
-	
-	`
+  `;
 
 
 
 	const [text] = useTypewriter({
 		words: [content],
-		loop: {},
-		deleteSpeed: 2
+		// loop: {},
 	})
 
 	return (
@@ -32,10 +29,7 @@ const Code = () => {
 					</div>
 					<div className={style.main}>
 						<p>
-							<span>
-								{text}
-							</span>
-
+							{text}
 							<Cursor />
 						</p>
 					</div>

@@ -1,8 +1,6 @@
-import { useState } from 'react'
-import { Link as Scrolling } from 'react-scroll';
+import { Link as Scrolling } from 'react-scroll'
 import { Link, Outlet } from 'react-router-dom'
 import style from './Navigation.module.scss'
-
 
 const Navigation = ({ isOpen, onClose }) => {
 	return (
