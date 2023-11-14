@@ -20,8 +20,6 @@ const Home = () => {
 			<Cards />
 			<Playments />
 			<Tabs />
-
-			{/* test */}
 			<SendMail />
 
 		</>

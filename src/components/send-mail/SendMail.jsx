@@ -37,7 +37,7 @@ const SendMail = () => {
 
 	return (
 		<>
-			<div className={style.layout}>
+			<div className={style.layout} id='contact'>
 				<div className={style.container}>
 					<div className={style.item}>
 						<h2>
@@ -54,8 +54,8 @@ const SendMail = () => {
 								{/* <label>Name</label> */}
 								<input
 									type="text"
-									minlength="3"
-									maxlength="25"
+									minLength="3"
+									maxLength="25"
 									placeholder='NAME'
 									value={name}
 									onChange={(e) => setName(e.target.value)}
@@ -74,7 +74,7 @@ const SendMail = () => {
 								<textarea
 									cols='20'
 									rows='5'
-									maxlength="500"
+									maxLength="500"
 									placeholder="Remember, be nice!"
 									value={message}
 									onChange={(e) => setMessage(e.target.value)}

@@ -11,6 +11,10 @@ const NavMobile = () => {
 
 	const [isOpen, setOpen] = useState(false)
 
+	const toggleMenu = () => {
+		setOpen(!isOpen);
+	};
+
 	const handleBodyOverflow = () => {
 		document.body.style.overflow = isOpen ? 'hidden' : 'auto';
 		document.body.style.position = isOpen ? 'fixed' : 'static';
@@ -32,7 +36,7 @@ const NavMobile = () => {
 						transition={{ duration: 0.4 }}
 					>
 
-						<Navigation isOpen={isOpen} />
+						<Navigation isOpen={isOpen} onClose={toggleMenu} />
 
 					</motion.div>}
 				</AnimatePresence>
