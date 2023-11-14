@@ -38,31 +38,55 @@ const SendMail = () => {
 	return (
 		<>
 			<div className={style.layout}>
+				<div className={style.container}>
+					<div className={style.item}>
+						<h2>
+							contact us
+						</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et animi quisquam odio, optio recusandae deleniti. Excepturi incidunt, rem dolorum eos nulla necessitatibus voluptate magni quibusdam, quae fugit sapiente modi voluptatem?
+						</p>
 
-				<form onSubmit={sendEmail}>
-					<label>Name</label>
-					<input
-						type="text"
-						placeholder='fucking name'
-						value={name}
-						onChange={(e) => setName(e.target.value)}
-					/>
-					<label>Email</label>
-					<input
-						type="email"
-						placeholder='fucking email'
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
-					/>
-					<label>Message</label>
-					<textarea
-						cols='30'
-						rows='10'
-						value={message}
-						onChange={(e) => setMessage(e.target.value)}
-					/>
-					<button type="submit" > send mail </button>
-				</form>
+					</div>
+					<div className={style.item}>
+						<div className={style.containerForm}>
+							<form onSubmit={sendEmail}>
+								{/* <label>Name</label> */}
+								<input
+									type="text"
+									minlength="3"
+									maxlength="25"
+									placeholder='NAME'
+									value={name}
+									onChange={(e) => setName(e.target.value)}
+									required
+								/>
+								{/* <label>Email</label> */}
+								<input
+									type="email"
+									pattern=".+@example\.com"
+									placeholder='EMAIL'
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+									required
+								/>
+								{/* <label>Message</label> */}
+								<textarea
+									cols='20'
+									rows='5'
+									maxlength="500"
+									placeholder="Remember, be nice!"
+									value={message}
+									onChange={(e) => setMessage(e.target.value)}
+								/>
+								<button type="submit" > send mail </button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+
 			</div>
 		</>
 	);
