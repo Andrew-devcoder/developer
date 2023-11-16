@@ -7,6 +7,7 @@ const About = () => {
 		<>
 
 			<div className={style.container}>
+				<div className={style.overlay}></div>
 
 				<h2 className={style.title}>about your mom</h2>
 

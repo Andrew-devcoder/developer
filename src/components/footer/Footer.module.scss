@@ -3,6 +3,12 @@
     transform-origin: top left;
     // background-color: #313131;
     background-color: #242424;
+
+    z-index: 3;
+}
+
+.disTransf {
+    transform: none !important;
 }
 
 .container {
