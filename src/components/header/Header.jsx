@@ -20,7 +20,7 @@ const Header = () => {
 
 				<Navigation />
 
-				<Button myStyle={myStyle} text="button" />
+				{/* <Button myStyle={myStyle} text="button" /> */}
 
 				<NavMobile />
 
