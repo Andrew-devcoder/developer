@@ -1,12 +1,10 @@
 import { Link as Scrolling } from 'react-scroll'
 import { Link, Outlet } from 'react-router-dom'
-// import { useTheme } from '../theme-provider/ThemeProvider';
 
 import style from './Navigation.module.scss'
 
 const Navigation = ({ isOpen, onClose, isFooter }) => {
 
-	// const { theme, toggleTheme } = useTheme();
 
 	return (
 		<>
@@ -55,6 +53,9 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 								spy={true}
 								smooth={true}
 								offset={0} duration={800}
+								onClick={() => {
+									onClose();
+								}}
 							>
 								Contact us
 							</Scrolling>
@@ -62,7 +63,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 					</ul>
 					:
 					<>
-						<ul className={isFooter && style.test}>
+						<ul className={isFooter && style.footer}>
 							<li>
 								<Scrolling
 									to='skills'
@@ -92,9 +93,6 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 									Case study
 								</a>
 							</li>
-							{/* <li>
-								<button onClick={toggleTheme}>Toggle Theme</button>
-							</li> */}
 							<li>
 								<Scrolling
 									to="contact"
@@ -105,12 +103,10 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 									Contact us
 								</Scrolling>
 							</li>
+							<li><a href="#">Github</a></li>
+							<li><a href="#">Upwork</a></li>
+							<li><a href="#">Fiverr</a></li>
 						</ul>
-						{isFooter && (
-							<div>
-								hi mom
-							</div>
-						)}
 					</>
 				}
 			</nav >

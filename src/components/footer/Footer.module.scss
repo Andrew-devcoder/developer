@@ -27,13 +27,21 @@
     max-width: 85%;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr;
 
     @media screen and (max-width: 425px) {
         max-width: 95%;
     }
 
     & svg {
+        will-change: filter;
+        transition: filter 300ms;
+
+        &:hover {
+            filter: drop-shadow(0 0 2em #646cffaa);
+            cursor: pointer;
+        }
+
         @media screen and (max-width: 425px) {
             display: none;
         }
@@ -64,8 +72,4 @@
             }
         }
     }
-}
-
-.icon {
-    margin: 0 5px;
 }

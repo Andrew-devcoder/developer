@@ -1,6 +1,5 @@
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
     font-weight: 400;
 
     color-scheme: dark light;
@@ -21,7 +20,7 @@
 a {
     font-weight: 500;
     color: #646cff;
-    text-decoration: inherit;
+    text-decoration: none;
 }
 
 a:hover {
@@ -39,12 +38,32 @@ body {
 }
 
 h1 {
-    font-size: 3.2em;
+    font-size: 94px;
     line-height: 1.1;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 54px;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 /* background of the scrollbar except button or resizer */
