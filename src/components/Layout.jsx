@@ -1,4 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
+// import { ThemeProvider } from '../components/theme-provider/ThemeProvider'
+
 import Header from './header/Header'
 
 import { Home } from '../pages/screen/home/Home'
@@ -9,8 +11,11 @@ import Footer from './footer/Footer'
 
 const Layout = () => {
 
+
 	return (
 		<>
+			{/* <ThemeProvider> */}
+
 			<Header />
 
 			{/* 
@@ -25,7 +30,9 @@ const Layout = () => {
 			</Routes>
 
 			<Footer />
+			{/* </ThemeProvider> */}
 		</>
 	)
 }
+
 export default Layout

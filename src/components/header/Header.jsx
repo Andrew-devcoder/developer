@@ -1,14 +1,11 @@
 import { Link, Outlet } from 'react-router-dom'
-
 import Navigation from '../navigation/Navigation';
-// import Button from '../button/Button';
 import NavMobile from '../nav-mobile/NavMobile'
 
 import style from './Header.module.scss'
 
 const Header = () => {
 
-	const myStyle = style.visible
 
 	return (
 		<>
@@ -20,7 +17,6 @@ const Header = () => {
 
 				<Navigation />
 
-				{/* <Button myStyle={myStyle} text="button" /> */}
 
 				<NavMobile />
 

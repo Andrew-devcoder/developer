@@ -1,8 +1,13 @@
 import { Link as Scrolling } from 'react-scroll'
 import { Link, Outlet } from 'react-router-dom'
+// import { useTheme } from '../theme-provider/ThemeProvider';
+
 import style from './Navigation.module.scss'
 
 const Navigation = ({ isOpen, onClose, isFooter }) => {
+
+	// const { theme, toggleTheme } = useTheme();
+
 	return (
 		<>
 			<nav className={isOpen ? style.mobile : style.desktop} >
@@ -87,6 +92,9 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 									Case study
 								</a>
 							</li>
+							{/* <li>
+								<button onClick={toggleTheme}>Toggle Theme</button>
+							</li> */}
 							<li>
 								<Scrolling
 									to="contact"
