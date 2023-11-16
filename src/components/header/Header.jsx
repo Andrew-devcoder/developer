@@ -1,10 +1,10 @@
 import { Link, Outlet } from 'react-router-dom'
-import style from './Header.module.scss'
 
 import Navigation from '../navigation/Navigation';
-import Button from '../button/Button';
+// import Button from '../button/Button';
 import NavMobile from '../nav-mobile/NavMobile'
 
+import style from './Header.module.scss'
 
 const Header = () => {
 
