@@ -6,71 +6,46 @@ const Navigation = ({ isOpen, onClose }) => {
 	return (
 		<>
 			<nav className={isOpen ? style.mobile : style.desktop} >
-				<ul>
-					{isOpen ? <li>
-						<Link
-							to='/'
-							onClick={() => {
-								onClose();
-							}}
-						>
-							Home
-						</Link>
-					</li>
-						: null}
-					<li>
-						{isOpen ? <Scrolling
-							to='skills'
-							spy={true}
-							smooth={true}
-							offset={-100}
-							duration={500}
-							onClick={() => {
-								onClose();
-							}}
-						>
-							skills
-						</Scrolling>
-							: <Scrolling
+
+				{isOpen ?
+					<ul>
+						<li>
+							<Scrolling
 								to='skills'
 								spy={true}
 								smooth={true}
 								offset={-100}
 								duration={500}
+								onClick={() => {
+									onClose();
+								}}
 							>
-								skills
+								Services
 							</Scrolling>
-						}
-					</li>
-					<li>
-						{isOpen ? <Link
-							to='/about'
-							onClick={() => {
-								onClose();
-							}}
-						>
-							About
-						</Link>
-							: <Link
+
+						</li>
+						<li>
+							<Link
 								to='/about'
+								onClick={() => {
+									onClose();
+								}}
 							>
-								About
+								About us
 							</Link>
-						}
-					</li>
-					<li>
-						{isOpen ? <Scrolling
-							to="contact"
-							spy={true}
-							smooth={true}
-							offset={0} duration={800}
-							onClick={() => {
-								onClose();
-							}}
-						>
-							Contact us
-						</Scrolling>
-							: <Scrolling
+						</li>
+						<li>
+							<a href="#">
+								Technologies
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Case study
+							</a>
+						</li>
+						<li>
+							<Scrolling
 								to="contact"
 								spy={true}
 								smooth={true}
@@ -78,11 +53,52 @@ const Navigation = ({ isOpen, onClose }) => {
 							>
 								Contact us
 							</Scrolling>
-						}
-					</li>
-				</ul>
-			</nav >
+						</li>
+					</ul>
+					:
+					<ul>
+						<li>
+							<Scrolling
+								to='skills'
+								spy={true}
+								smooth={true}
+								offset={-100}
+								duration={500}
+							>
+								Services
+							</Scrolling>
 
+						</li>
+						<li>
+							<Link
+								to='/about'
+							>
+								About us
+							</Link>
+						</li>
+						<li>
+							<a href="#">
+								Technologies
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Case study
+							</a>
+						</li>
+						<li>
+							<Scrolling
+								to="contact"
+								spy={true}
+								smooth={true}
+								offset={0} duration={800}
+							>
+								Contact us
+							</Scrolling>
+						</li>
+					</ul>
+				}
+			</nav >
 		</>
 	)
 }
