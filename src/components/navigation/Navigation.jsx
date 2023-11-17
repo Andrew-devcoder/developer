@@ -6,6 +6,7 @@ import style from './Navigation.module.scss'
 const Navigation = ({ isOpen, onClose, isFooter }) => {
 
 
+
 	return (
 		<>
 			<nav className={isOpen ? style.mobile : style.desktop} >
@@ -63,7 +64,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 					</ul>
 					:
 					<>
-						<ul className={isFooter && style.footer}>
+						<ul className={isFooter ? style.footer : style.desktop}>
 							<li>
 								<Scrolling
 									to='skills'
@@ -98,14 +99,21 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 									to="contact"
 									spy={true}
 									smooth={true}
-									offset={0} duration={800}
+									offset={90}
+									duration={800}
 								>
 									Contact us
 								</Scrolling>
 							</li>
-							<li><a href="#">Github</a></li>
-							<li><a href="#">Upwork</a></li>
-							<li><a href="#">Fiverr</a></li>
+							{isFooter ?
+								<>
+									<li></li>
+									<li><a href="#">Github</a></li>
+									<li><a href="#">Upwork</a></li>
+									<li><a href="#">Fiverr</a></li>
+								</>
+								: null
+							}
 						</ul>
 					</>
 				}
