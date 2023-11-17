@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Squash as Hamburger } from 'hamburger-react'
 import { motion, AnimatePresence } from "framer-motion"
-import { Link } from 'react-router-dom'
-
 import Navigation from '../navigation/Navigation'
 import style from './NavMobile.module.scss'
 
