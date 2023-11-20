@@ -1,11 +1,11 @@
 import { Link as Scrolling } from 'react-scroll'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 
 import style from './Navigation.module.scss'
 
 const Navigation = ({ isOpen, onClose, isFooter }) => {
-
-	const pageAbout = window.location.pathname === '/about'
+	const location = useLocation();
+	const pageAbout = location.pathname === '/about'
 
 	return (
 		<>
