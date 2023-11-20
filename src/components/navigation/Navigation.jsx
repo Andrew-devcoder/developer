@@ -5,7 +5,7 @@ import style from './Navigation.module.scss'
 
 const Navigation = ({ isOpen, onClose, isFooter }) => {
 
-
+	const pageAbout = window.location.pathname === '/about'
 
 	return (
 		<>
@@ -77,7 +77,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 								</Scrolling>
 
 							</li>
-							<li>
+							<li className={pageAbout ? style.mark : ''}>
 								<Link
 									to='/about'
 								>
