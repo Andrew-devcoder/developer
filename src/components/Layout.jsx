@@ -1,8 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
-// import { ThemeProvider } from '../components/theme-provider/ThemeProvider'
 
 import Header from './header/Header'
-
+import Button from './button/Button'
 import { Home } from '../pages/screen/home/Home'
 import { About } from '../pages/screen/about/About'
 import { NotFound } from '../pages/screen/not-found/NotFound'
@@ -14,9 +13,10 @@ const Layout = () => {
 
 	return (
 		<>
-			{/* <ThemeProvider> */}
 
 			<Header />
+
+			<Button scrollUp text='go to up' />
 
 			{/* 
 			<Outlet />
@@ -30,7 +30,6 @@ const Layout = () => {
 			</Routes>
 
 			<Footer />
-			{/* </ThemeProvider> */}
 		</>
 	)
 }
