@@ -9,6 +9,10 @@
     align-items: center;
     min-height: 100vh;
 
+    @media screen and (min-width: 1490px) {
+        max-width: 1440px;
+    }
+
     @media screen and (max-width: 992px) {
         display: flex;
         flex-direction: column;
