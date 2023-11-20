@@ -1,3 +1,5 @@
+import { motion, AnimatePresence } from "framer-motion"
+
 import style from './Card.module.scss';
 
 const Card = () => {
@@ -16,16 +18,37 @@ const Card = () => {
 		},
 	];
 
+	const testAnimation = {
+		hidden: {
+			y: 100,
+			opacity: 0,
+		},
+		visible: custom => ({
+			y: 0,
+			opacity: 1,
+			transition: { delay: custom * 0.2 }
+		}),
+	}
+
 	return (
 		<>
 			{arrayData.length ? arrayData.map((data, index) => (
-				<div key={index} className={style.card}>
+
+				<motion.div
+					key={index}
+					className={style.card}
+					initial="hidden"
+					whileInView="visible"
+					custom={2 * index}
+					variants={testAnimation}
+					viewport={{ amout: 0.2 }}
+				>
 					<div className={style.wrapperImg}>
 						<img src={data.imageUrl} alt={`image ${index}`} />
 					</div>
 					<p>{data.text}</p>
 					<a href='#' className={style.test}>More</a>
-				</div>
+				</motion.div >
 			)) : <p>not found</p>}
 		</>
 	);

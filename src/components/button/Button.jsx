@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, forwardRef } from 'react';
 import { motion, AnimatePresence } from "framer-motion"
 
 import style from './Button.module.scss';
 
-const Button = ({ text, myStyle, scrollUp }) => {
+const Button = forwardRef(({ text, myStyle, scrollUp }, ref) => {
 
 	const customStyle = `${style.button} ${myStyle}`;
 	const [goToUp, setGoToUp] = useState(false);
@@ -24,27 +24,31 @@ const Button = ({ text, myStyle, scrollUp }) => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	};
 
+
+
 	return (
 
 		<AnimatePresence>
 			{scrollUp ? (
 				<motion.button
+					ref={ref}
 					className={`${customStyle} ${style.scrollUp}`}
 					onClick={scrollUp ? scrollToUp : null}
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					transition={{ duration: 0.4 }}
 				>
 					{text}
 				</motion.button>
 			) :
-				<button className={customStyle}>
+				<button
+					ref={ref}
+					className={customStyle}>
 					{text}
 				</button>
 			}
 		</AnimatePresence>
 	);
-};
+});
 
 export default Button;
+
+
+export const MButton = motion(Button)
