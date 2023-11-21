@@ -1,16 +1,24 @@
 import { useEffect, useState, forwardRef } from 'react';
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 import style from './Button.module.scss';
 
 const Button = forwardRef(({ text, myStyle, scrollUp }, ref) => {
 
 	const customStyle = `${style.button} ${myStyle}`;
-	const [goToUp, setGoToUp] = useState(false);
+
+	const testY = { y: 100 }
+	const testYZero = { y: 0 }
+
+	const [scrollTop, setScrollTop] = useState(testY);
 
 	useEffect(() => {
 		const handleScroll = () => {
-			setGoToUp(scrollUp && window.scrollY > 100);
+			if (window.scrollY > 300) {
+				setScrollTop(testYZero)
+			} else {
+				setScrollTop(testY)
+			}
 		};
 
 		window.addEventListener('scroll', handleScroll);
@@ -28,15 +36,16 @@ const Button = forwardRef(({ text, myStyle, scrollUp }, ref) => {
 
 	return (
 
-		<AnimatePresence>
+		<>
 			{scrollUp ? (
-				<motion.button
+				<button
 					ref={ref}
+					style={{ transform: `translateY(${scrollTop.y}px)` }}
 					className={`${customStyle} ${style.scrollUp}`}
-					onClick={scrollUp ? scrollToUp : null}
+					onClick={scrollToUp}
 				>
 					{text}
-				</motion.button>
+				</button>
 			) :
 				<button
 					ref={ref}
@@ -44,7 +53,7 @@ const Button = forwardRef(({ text, myStyle, scrollUp }, ref) => {
 					{text}
 				</button>
 			}
-		</AnimatePresence>
+		</>
 	);
 });
 

@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Header from './header/Header'
-import Button from './button/Button'
+import MButton from './button/Button'
 import { Home } from '../pages/screen/home/Home'
 import { About } from '../pages/screen/about/About'
 import { NotFound } from '../pages/screen/not-found/NotFound'
@@ -16,7 +16,11 @@ const Layout = () => {
 
 			<Header />
 
-			<Button scrollUp text='go to up' />
+
+			<MButton
+				text='go to up'
+				scrollUp
+			/>
 
 			{/* 
 			<Outlet />

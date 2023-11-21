@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 import { MButton } from '../button/Button'
 import style from './TextButton.module.scss'
