@@ -49,7 +49,8 @@ const Button = forwardRef(({ text, myStyle, scrollUp }, ref) => {
 			) :
 				<button
 					ref={ref}
-					className={customStyle}>
+					className={customStyle}
+				>
 					{text}
 				</button>
 			}
