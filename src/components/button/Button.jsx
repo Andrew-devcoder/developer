@@ -7,17 +7,17 @@ const Button = forwardRef(({ text, myStyle, scrollUp }, ref) => {
 
 	const customStyle = `${style.button} ${myStyle}`;
 
-	const testY = { y: 100 }
-	const testYZero = { y: 0 }
+	const initialScrollTop = { y: 100 }
+	const scrolledUpValue = { y: 0 }
 
-	const [scrollTop, setScrollTop] = useState(testY);
+	const [scrollTop, setScrollTop] = useState(initialScrollTop);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			if (window.scrollY > 300) {
-				setScrollTop(testYZero)
+				setScrollTop(scrolledUpValue)
 			} else {
-				setScrollTop(testY)
+				setScrollTop(initialScrollTop)
 			}
 		};
 
