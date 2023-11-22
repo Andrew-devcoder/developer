@@ -1,4 +1,4 @@
-import bgvideo from '../../../../public/video.mp4'
+import bgvideo from '/video.mp4'
 
 import style from './About.module.scss'
 
@@ -11,7 +11,9 @@ const About = () => {
 
 				<h2 className={style.title}>about your mom</h2>
 
-				<video src={bgvideo} autoPlay loop muted controls="controls" preload='auto' onTouchStart={() => { }} playsinline webkit-playsinline />
+				<video autoPlay loop muted preload onTouchStart={() => { }} playsinline webkit-playsinline  >
+					<source src={bgvideo} />
+				</video>
 			</div>
 
 		</>
