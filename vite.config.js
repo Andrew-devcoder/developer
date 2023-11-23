@@ -7,7 +7,7 @@ export default defineConfig({
     plugins: [
         removeAttr({
             extensions: ["jsx"],
-            attributes: ["playsinline"],
+            attributes: ["playsinline, muted"],
             ignoreFolders: ["src/pages", "src/components"],
             ignoreFiles: ["src/pages/screen/about/About.jsx"],
         }),
