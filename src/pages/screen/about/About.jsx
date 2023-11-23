@@ -12,7 +12,7 @@ const About = () => {
 				<h2 className={style.title}>about your mom</h2>
 
 				<video playsinline webkit-playsinline autoPlay loop muted preload onTouchStart={() => { }}  >
-					<source src={bgvideo} />
+					<source playsinline src={bgvideo} />
 				</video>
 			</div>
 
