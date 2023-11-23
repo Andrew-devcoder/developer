@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import removeAttr from "remove-attr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
