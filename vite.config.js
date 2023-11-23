@@ -8,7 +8,7 @@ export default defineConfig({
     plugins: [
         removeAttr({
             extensions: ["jsx"],
-            attributes: ["autoPlay", "muted", "webkit-playsinline", "preload"],
+            attributes: ["autoplay", "muted", "webkit-playsinline", "preload"],
             ignoreFolders: ["src/pages", "src/components"],
             ignoreFiles: ["src/pages/screen/about/About.jsx"],
         }),
