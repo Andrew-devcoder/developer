@@ -5,16 +5,17 @@ import style from './About.module.scss'
 const About = () => {
 	return (
 		<>
+			<React.StrictMode>
+				<div className={style.container}>
+					<div className={style.overlay}></div>
 
-			<div className={style.container}>
-				<div className={style.overlay}></div>
+					<h2 className={style.title}>about your mom</h2>
 
-				<h2 className={style.title}>about your mom</h2>
-
-				<video playsinline webkit-playsinline autoPlay loop muted preload onTouchStart={() => { }}  >
-					<source playsinline src={bgvideo} />
-				</video>
-			</div>
+					<video playsinline webkit-playsinline autoPlay loop muted preload onTouchStart={() => { }}  >
+						<source playsinline src={bgvideo} />
+					</video>
+				</div>
+			</React.StrictMode>
 
 		</>
 	)
