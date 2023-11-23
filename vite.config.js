@@ -6,6 +6,7 @@ import removeAttr from "remove-attr";
 export default defineConfig({
     // plugins: [react()],
     plugins: [
+        react(),
         removeAttr({
             extensions: ["jsx"],
             attributes: [
@@ -17,6 +18,5 @@ export default defineConfig({
             ignoreFolders: ["src/pages", "src/components"],
             ignoreFiles: ["src/pages/screen/about/About.jsx"],
         }),
-        react(),
     ],
 });
