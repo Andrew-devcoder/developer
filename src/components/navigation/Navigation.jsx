@@ -12,6 +12,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 			<nav className={isOpen ? style.mobile : style.desktop} >
 
 				{isOpen ?
+
 					<ul>
 						<li>
 							<Scrolling
