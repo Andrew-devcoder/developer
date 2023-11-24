@@ -7,16 +7,16 @@ export default defineConfig({
     // plugins: [react()],
     plugins: [
         react(),
-        removeAttr({
-            extensions: ["jsx"],
-            attributes: [
-                "playsinline",
-                "muted",
-                "webkit-playsinline",
-                "preload",
-            ],
-            ignoreFolders: ["src/pages", "src/components"],
-            ignoreFiles: ["src/pages/screen/about/About.jsx"],
-        }),
+        // removeAttr({
+        //     extensions: ["jsx"],
+        //     attributes: [
+        //         "playsinline",
+        //         "muted",
+        //         "webkit-playsinline",
+        //         "preload",
+        //     ],
+        //     ignoreFolders: ["src/pages", "src/components"],
+        //     ignoreFiles: ["src/pages/screen/about/About.jsx"],
+        // }),
     ],
 });
