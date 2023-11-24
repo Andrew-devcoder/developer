@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from "framer-motion"
 
 import style from './SendMail.module.scss'
 
@@ -35,22 +36,51 @@ const SendMail = () => {
 			});
 	};
 
+	const animation = {
+		hidden: custom => ({
+			x: custom,
+			opacity: 0,
+		}),
+		visible: {
+			x: 0,
+			opacity: 1,
+			transition: { delay: 0.4 }
+		},
+	}
+
 	return (
 		<>
 			<div className={style.layout} id='contact'>
-				<div className={style.container}>
+				<motion.div
+					className={style.container}
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ amout: 0.8, once: true }}
+
+				>
 					<div className={style.item}>
-						<h2>
+						<motion.h2
+							variants={animation}
+							custom={-100}
+						>
 							contact us
-						</h2>
-						<p>
+						</motion.h2>
+						<motion.p
+							variants={animation}
+							custom={-100}
+						>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et animi quisquam odio, optio recusandae deleniti. Excepturi incidunt, rem dolorum eos nulla necessitatibus voluptate magni quibusdam, quae fugit sapiente modi voluptatem?
-						</p>
+						</motion.p>
 
 					</div>
 					<div className={style.item}>
-						<div className={style.containerForm}>
-							<form onSubmit={sendEmail}>
+						<motion.div
+							className={style.containerForm}
+							onSubmit={sendEmail}
+							variants={animation}
+							custom={100}
+						>
+							<form>
 								{/* <label>Name</label> */}
 								<input
 									type="text"
@@ -81,10 +111,10 @@ const SendMail = () => {
 								/>
 								<button type="submit" > send mail </button>
 							</form>
-						</div>
+						</motion.div>
 					</div>
 
-				</div>
+				</motion.div>
 
 
 			</div>

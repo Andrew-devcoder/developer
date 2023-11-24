@@ -41,7 +41,7 @@ const Card = () => {
 					whileInView="visible"
 					custom={2 * index}
 					variants={testAnimation}
-					viewport={{ amout: 0.2 }}
+					viewport={{ amout: 0.2, once: true }}
 				>
 					<div className={style.wrapperImg}>
 						<img src={data.imageUrl} alt={`image ${index}`} />
