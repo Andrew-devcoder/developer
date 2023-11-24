@@ -1,4 +1,5 @@
 import bgvideo from '/video.mp4'
+import ReactPlayer from 'react-player'
 
 import style from './About.module.scss'
 
@@ -12,9 +13,21 @@ const About = () => {
 
 				<h2 className={style.title}>about your mom</h2>
 
-				<video playsinline autoPlay loop muted preload>
+				<ReactPlayer
+					url={bgvideo}
+					width="100%"
+					height="100vh"
+					playing={true}
+					volume={null}
+					muted={true}
+					playsinline
+					loop
+				>
+
+				</ReactPlayer>
+				{/* <video playsInline autoPlay loop muted preload>
 					<source src={bgvideo} />
-				</video>
+				</video> */}
 			</div>
 
 		</>
