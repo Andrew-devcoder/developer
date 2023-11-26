@@ -4,6 +4,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 import style from './Navigation.module.scss'
 
 const Navigation = ({ isOpen, onClose, isFooter }) => {
+
 	const location = useLocation();
 	const pageAbout = location.pathname === '/about'
 
