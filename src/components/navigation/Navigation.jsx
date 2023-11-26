@@ -8,9 +8,11 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 	const location = useLocation();
 	const pageAbout = location.pathname === '/about'
 
+	const navClass = isOpen ? style.mobile : style.desktop
+
 	return (
 		<>
-			<nav className={isOpen ? style.mobile : style.desktop} >
+			<nav className={`${navClass}`} >
 
 				{isOpen ?
 

@@ -12,12 +12,16 @@ const NavMobile = () => {
 		setOpen(!isOpen);
 	};
 
+	const header = document.getElementsByTagName('header')
+
 	const handleBodyOverflow = () => {
 		document.body.style.overflow = isOpen ? 'hidden' : 'auto';
 		document.body.style.position = isOpen ? 'fixed' : 'static';
 	};
 
 	handleBodyOverflow();
+
+
 
 	return (
 		<>
