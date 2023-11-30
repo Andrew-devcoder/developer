@@ -1,3 +1,4 @@
+import { AuthProvider } from '../../../auth'
 import Intro from '../../../components/intro/Intro'
 import TextCenter from '../../../components/text-center/TextCenter'
 import IconsBlock from '../../../components/block-with-icons/IconsBlock'
@@ -13,7 +14,7 @@ const Home = () => {
 
 	return (
 		<>
-
+			<AuthProvider />
 			<Intro />
 			<TextCenter />
 			<IconsBlock />

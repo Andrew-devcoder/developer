@@ -6,9 +6,9 @@ import Layout from './components/Layout'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Layout />
-    </BrowserRouter>
-  </StrictMode>
+  // <StrictMode>
+  <BrowserRouter>
+    <Layout />
+  </BrowserRouter>
+  // </StrictMode>
 )
