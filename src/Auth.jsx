@@ -44,14 +44,14 @@ export const AuthProvider = () => {
 	return (
 		user != null ?
 			<>
-				<a href="#">
-					{user.displayName}
-				</a>
+
+				{user.displayName}
+
 				<Button text='Sign Out' onClick={handleSignOut} />
 			</>
 			:
 			<>
-				<Button text='Sign in with Google' onClick={handleSignOut} />
+				<Button text='Sign in with Google' onClick={handleSignInWithGoogle} />
 			</>
 	)
 }
