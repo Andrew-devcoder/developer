@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { app } from "../../firebase"
 
-
 import style from './SendMail.module.scss'
 
 const SendMail = () => {
