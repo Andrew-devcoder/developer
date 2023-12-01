@@ -1,3 +1,4 @@
+import { AuthProvider } from '../../Auth'
 import { Link as Scrolling } from 'react-scroll'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 
@@ -53,6 +54,9 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 							</a>
 						</li>
 						<li>
+							<AuthProvider />
+						</li>
+						<li>
 							<Scrolling
 								to="contact"
 								spy={true}
@@ -65,6 +69,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 								Contact us
 							</Scrolling>
 						</li>
+
 					</ul>
 					:
 					<>
@@ -99,6 +104,9 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 								</a>
 							</li>
 							<li>
+								<AuthProvider />
+							</li>
+							<li>
 								<Scrolling
 									to="contact"
 									spy={true}
@@ -121,6 +129,8 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 						</ul>
 					</>
 				}
+
+
 			</nav >
 		</>
 	)
