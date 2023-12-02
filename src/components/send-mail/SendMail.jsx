@@ -3,13 +3,13 @@ import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion"
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { firebase } from "../../firebase.js"
+import { app } from "./firebase"
 
 import style from './SendMail.module.scss'
 
 const SendMail = () => {
 
-	const auth = getAuth(firebase)
+	const auth = getAuth(app)
 	const [user, setUser] = useState(auth)
 	useEffect(() => {
 		const unsubscribe = onAuthStateChanged(auth, (user) => {
