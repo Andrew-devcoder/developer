@@ -101,7 +101,7 @@ const SendMail = () => {
 									maxLength="25"
 									placeholder='NAME'
 									// value={name}
-									value={user?.displayName || name}
+									// value={user?.displayName || name}
 									onChange={(e) => setName(e.target.value)}
 									required
 								/>
@@ -111,7 +111,7 @@ const SendMail = () => {
 									pattern=".+@example\.com"
 									placeholder='EMAIL'
 									// value={email}
-									value={user?.email || email}
+									// value={user?.email || email}
 									onChange={(e) => setEmail(e.target.value)}
 									required
 								/>
