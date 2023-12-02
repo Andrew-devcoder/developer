@@ -59,7 +59,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 							</Link>
 						</li>
 						<li>
-							<AuthProvider />
+							{/* <AuthProvider /> */}
 						</li>
 						<li>
 							<Scrolling
@@ -111,7 +111,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 								</Link>
 							</li>
 							<li>
-								<AuthProvider />
+								{/* <AuthProvider /> */}
 							</li>
 							<li>
 								<Scrolling
