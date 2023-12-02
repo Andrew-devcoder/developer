@@ -2,6 +2,7 @@
 import TextButton from '../text-with-button/TextButton'
 import Code from '../code/Code'
 
+
 import style from './Intro.module.scss'
 
 const Intro = () => {
@@ -11,7 +12,6 @@ const Intro = () => {
 			<div className={style.container}>
 
 				<TextButton />
-
 				<Code />
 
 			</div>

@@ -49,9 +49,14 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<Link
+								to='/store'
+								onClick={() => {
+									onClose();
+								}}
+							>
 								Case study
-							</a>
+							</Link>
 						</li>
 						<li>
 							<AuthProvider />
@@ -99,9 +104,11 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<Link
+									to='/store'
+								>
 									Case study
-								</a>
+								</Link>
 							</li>
 							<li>
 								<AuthProvider />
