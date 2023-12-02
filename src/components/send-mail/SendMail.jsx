@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion"
 
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { firebase } from "../../firebase"
+import { firebase } from "../../firebase.js"
 
 import style from './SendMail.module.scss'
 
