@@ -38,8 +38,8 @@ const Xml = () => {
 			const xmlText = await fetchXml(localXmlPath);
 			const xmlDoc = parseXml(xmlText);
 			// console.log(xmlDoc);
-
 			const offers = xmlDoc.querySelector('offers')
+
 			if (offers) {
 				const offer = offers.querySelectorAll('offer')
 				const dataOffer = []
@@ -50,7 +50,7 @@ const Xml = () => {
 					const name = poduct.querySelector('name').textContent
 					const picture = poduct.querySelector('picture').textContent
 					const vendorCode = poduct.querySelector('vendorCode').textContent
-					const id = poduct.getAttribute('id')
+					// const id = poduct.getAttribute('id')
 
 
 
@@ -61,7 +61,6 @@ const Xml = () => {
 						price: price,
 						img: picture,
 						vendorCode: vendorCode,
-						id: id,
 					})
 
 					setResult(dataOffer);
@@ -114,7 +113,7 @@ const Xml = () => {
 							<p>Country: {config.country}</p>
 							<p>Price: {config.price} UAH</p>
 							<p>vendorCode: {config.vendorCode} </p>
-							<p>id: {config.id} </p>
+							{/* <p>id: {config.id} </p> */}
 						</div>
 					))}
 				</div>
