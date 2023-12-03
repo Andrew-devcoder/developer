@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { getAuth, signInWithPopup, signOut } from "firebase/auth"
-import { app, googleAuthProvider } from "./components/firebase/firebase"
+import { app, googleAuthProvider } from "../src/components/firebase/firebase"
 
 import Button from "./components/button/Button"
 
