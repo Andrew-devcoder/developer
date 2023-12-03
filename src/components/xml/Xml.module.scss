@@ -11,13 +11,13 @@
 
 .wrapperProducts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    padding: 50px 0;
+    padding: 50px 0 100px;
 
-@media (max-width: 992px) {
-grid-template-columns: 1fr;
-}
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .product {
