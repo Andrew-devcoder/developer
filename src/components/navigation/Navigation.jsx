@@ -1,4 +1,4 @@
-import { AuthProvider } from '../../Auth'
+import { AuthProvider } from '../../auth'
 import { Link as Scrolling } from 'react-scroll'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 
