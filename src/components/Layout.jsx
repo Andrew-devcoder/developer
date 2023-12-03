@@ -8,6 +8,8 @@ import { About } from '../pages/screen/about/About'
 import { Store } from '../pages/screen/study-case/Store'
 import { NotFound } from '../pages/screen/not-found/NotFound'
 
+import ProductDetail from './xml/product-detail/productDetail'
+
 import Footer from './footer/Footer'
 
 const Layout = () => {
@@ -33,6 +35,7 @@ const Layout = () => {
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/store' element={<Store />} />
+				<Route path='/store/:id' element={<ProductDetail />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 
