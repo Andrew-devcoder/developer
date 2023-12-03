@@ -49,3 +49,22 @@
     object-fit: cover;
     object-position: center;
 }
+
+.loading {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top: #fff;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}

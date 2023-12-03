@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 import style from './Button.module.scss';
 
-const Button = forwardRef(({ text, myStyle, scrollUp, onClick }, ref) => {
+const Button = forwardRef(({ text, myStyle, scrollUp, onClick, id }, ref) => {
 
 	const customStyle = `${style.button} ${myStyle}`;
 
@@ -43,6 +43,7 @@ const Button = forwardRef(({ text, myStyle, scrollUp, onClick }, ref) => {
 					style={{ transform: `translateY(${scrollTop.y}px)` }}
 					className={`${customStyle} ${style.scrollUp}`}
 					onClick={scrollToUp}
+
 				>
 					{text}
 				</button>
@@ -51,6 +52,7 @@ const Button = forwardRef(({ text, myStyle, scrollUp, onClick }, ref) => {
 					ref={ref}
 					className={customStyle}
 					onClick={onClick}
+					id={id}
 				>
 					{text}
 				</button>
