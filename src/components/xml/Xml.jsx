@@ -78,7 +78,6 @@ const Xml = () => {
 		}
 	};
 
-	handleClick()
 
 
 
@@ -87,14 +86,23 @@ const Xml = () => {
 	return (
 		<>
 			<div className={style.container}>
+				<div className={style.nav}>
+					{result != null ?
+						<input
+							placeholder='Type to search...'
+							type="text"
+							onChange={(e) => setInput(e.target.value.toLowerCase())}
+						/>
+						:
+						<Button
+							text="Loading list product"
+							onClick={handleClick}
+						/>
+					}
 
-				{/* <Button text="Get product" onClick={handleClick}></Button> */}
 
-				<input
-					placeholder='Type to search...'
-					type="text"
-					onChange={(e) => setInput(e.target.value.toLowerCase())}
-				/>
+
+				</div>
 
 				<div className={style.wrapperProducts}>
 

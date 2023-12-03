@@ -9,6 +9,11 @@
     gap: 10px;
 }
 
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
 .wrapperProducts {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
