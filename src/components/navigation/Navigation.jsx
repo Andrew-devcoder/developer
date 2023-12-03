@@ -1,4 +1,4 @@
-// import { AuthProvider } from '../../Auth'
+import { AuthProvider } from '../../Auth'
 import { Link as Scrolling } from 'react-scroll'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 
@@ -59,7 +59,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 							</Link>
 						</li>
 						<li>
-							{/* <AuthProvider /> */}
+							<AuthProvider />
 						</li>
 						<li>
 							<Scrolling
@@ -111,7 +111,7 @@ const Navigation = ({ isOpen, onClose, isFooter }) => {
 								</Link>
 							</li>
 							<li>
-								{/* <AuthProvider /> */}
+								<AuthProvider />
 							</li>
 							<li>
 								<Scrolling

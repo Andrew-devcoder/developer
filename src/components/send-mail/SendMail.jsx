@@ -2,22 +2,22 @@ import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion"
 
-// import { getAuth, onAuthStateChanged } from 'firebase/auth';
-// import { app } from "../firebase/firebase"
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { app } from "../firebase/firebase"
 
 import style from './SendMail.module.scss'
 
 const SendMail = () => {
 
-	// const auth = getAuth(app)
-	// const [user, setUser] = useState(auth)
-	// useEffect(() => {
-	// 	const unsubscribe = onAuthStateChanged(auth, (user) => {
-	// 		return setUser(user);
-	// 	});
+	const auth = getAuth(app)
+	const [user, setUser] = useState(auth)
+	useEffect(() => {
+		const unsubscribe = onAuthStateChanged(auth, (user) => {
+			return setUser(user);
+		});
 
-	// 	return () => unsubscribe();
-	// }, [auth]);
+		return () => unsubscribe();
+	}, [auth]);
 
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
@@ -101,7 +101,7 @@ const SendMail = () => {
 									maxLength="25"
 									placeholder='NAME'
 									// value={name}
-									// value={user?.displayName || name}
+									value={user?.displayName || name}
 									onChange={(e) => setName(e.target.value)}
 									required
 								/>
@@ -111,7 +111,7 @@ const SendMail = () => {
 									pattern=".+@example\.com"
 									placeholder='EMAIL'
 									// value={email}
-									// value={user?.email || email}
+									value={user?.email || email}
 									onChange={(e) => setEmail(e.target.value)}
 									required
 								/>
