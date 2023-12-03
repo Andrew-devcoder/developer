@@ -8,7 +8,6 @@ import style from './Xml.module.scss'
 const Xml = () => {
 
 	const [result, setResult] = useState(null);
-
 	const localXmlPath = xmlData;
 
 	const fetchXml = async (path) => {
@@ -32,6 +31,7 @@ const Xml = () => {
 			throw error;
 		}
 	};
+
 
 	const handleClick = async () => {
 		try {
@@ -78,13 +78,17 @@ const Xml = () => {
 		}
 	};
 
+	handleClick()
+
+
+
 	const [input, setInput] = useState("");
 
 	return (
 		<>
 			<div className={style.container}>
 
-				<Button text="Get XML file" onClick={handleClick}></Button>
+				{/* <Button text="Get product" onClick={handleClick}></Button> */}
 
 				<input
 					placeholder='Type to search...'
